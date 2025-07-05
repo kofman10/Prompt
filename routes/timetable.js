@@ -25,4 +25,16 @@ router.post("/",  async (req, res) => {
   }
 });
 
+//GET ALL TIMETABLE ENTRIES
+
+router.get("/", async (req, res) => {
+  try {
+    const timetables = await Timetable.find(); 
+    res.status(200).json(timetables); 
+  } catch (err) {
+    res.status(500).json(err); 
+  }
+});
+
+
 module.exports = router;
