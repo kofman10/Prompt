@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
-const UserSchema = new mongoose.Schema(
+const CourseSchema = new mongoose.Schema(
   {
-    course: { type: Array, required: true},
+    course: { type: String, required: true},
   },
   { timestamps: true }
 );
-module.exports = mongoose.model("Users", UserSchema);
+module.exports = mongoose.model("Course", CourseSchema);
