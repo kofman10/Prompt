@@ -6,11 +6,6 @@ const TimetableSchema = new mongoose.Schema(
     time: { type: String, required: true},
     course: { type: String, required: true },
     venue: { type: String, required: true},
-   
-  //   isAdmin: {
-  //     type: Boolean,
-  //     default: false,
-  //   },
    },
    { timestamps: true }
 );
